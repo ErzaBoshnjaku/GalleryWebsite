@@ -17,10 +17,10 @@
         </ul>
     </header>
 
-     <!-- main content -->
-     <main class="blog-main">
+    <!-- main content -->
+    <main class="blog-main">
         <div class="video-container">
-            <video id="video1" src="japan2.mp4" controls></video>
+            <video id="video1" src="Japan - A short travel film.mp4" controls></video>
         </div>
     </main>
     <!-- footer -->
@@ -32,15 +32,12 @@
         const prevButton = document.getElementById('prev');
         const nextButton = document.getElementById('next');
         const sliderItems = document.querySelectorAll('.slider-item');
-        const videos = document.querySelectorAll('video');
         let currentIndex = 0;
 
         function showSlide(index) {
             sliderItems.forEach((item, i) => {
                 item.classList.toggle('active', i === index);
-                videos[i].pause(); // Pause the video when it's not active
             });
-            videos[index].play(); // Play the video when it's active
         }
 
         prevButton.addEventListener('click', () => {
@@ -52,15 +49,6 @@
             currentIndex = (currentIndex < sliderItems.length - 1) ? currentIndex + 1 : 0;
             showSlide(currentIndex);
         });
-
-        // Set initial volume and ensure videos are not muted
-        videos.forEach(video => {
-            video.volume = 1; // Set volume to 100%
-            video.muted = false; // Ensure video is not muted
-        });
-
-        // Start playing the first video
-        showSlide(currentIndex);
     </script>
 </body>
 </html>
