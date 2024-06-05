@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">Hiraeth</div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="info.html">Info</a></li>
+        </ul>
+    </header>
+
+     <!-- main content -->
+     <main class="blog-main">
+        <div class="video-container">
+            <video id="video1" src="japan2.mp4" controls></video>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2024 Hiraeth</p>
+    </footer>
+
+    <script>
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        const sliderItems = document.querySelectorAll('.slider-item');
+        const videos = document.querySelectorAll('video');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            sliderItems.forEach((item, i) => {
+                item.classList.toggle('active', i === index);
+                videos[i].pause(); // Pause the video when it's not active
+            });
+            videos[index].play(); // Play the video when it's active
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : sliderItems.length - 1;
+            showSlide(currentIndex);
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex < sliderItems.length - 1) ? currentIndex + 1 : 0;
+            showSlide(currentIndex);
+        });
+
+        // Set initial volume and ensure videos are not muted
+        videos.forEach(video => {
+            video.volume = 1; // Set volume to 100%
+            video.muted = false; // Ensure video is not muted
+        });
+
+        // Start playing the first video
+        showSlide(currentIndex);
+    </script>
+</body>
+</html>
