@@ -6,7 +6,26 @@ body {
     background-color: #010101;
     color: #eee;
 }
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    display: flex;
+    align-items: center;
+}
 
+.logo img {
+    max-width: 100%;
+}
+
+header {
+    width: 100%; /* Adjust the width if needed */
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
 svg {
     width: 25px;
 }
