@@ -286,3 +286,159 @@ header .menu a:hover {
         background-color: rgba(0, 0, 0, 0.8);
     }
     
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.about-us {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #fff;
+}
+.pic {
+  height: auto;
+  width: 400px;
+  border-radius: 12px;
+}
+.about {
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text {
+  width: 540px;
+}
+.text h2 {
+  color: #333;
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text h5 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span {
+  color: #4070f4;
+}
+.text p {
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data {
+  margin-top: 30px;
+}
+.hire {
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover {
+  background: #000;
+}
+
+
+
+/* Apply these styles only to the info page */
+body.info-page {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    background-image: url('japan1.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #eee;
+}
+
+/* Additional styling */
+body.info-page .about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 90px 0;
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay */
+}
+
+body.info-page .pic {
+    height: auto;
+    width: 400px;
+    border-radius: 12px;
+}
+
+body.info-page .about {
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body.info-page .text {
+    width: 540px;
+}
+
+body.info-page .text h2 {
+    color: #fff;
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+body.info-page .text h5 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+body.info-page span {
+    color: #4070f4;
+}
+
+body.info-page .text p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+body.info-page .data {
+    margin-top: 30px;
+}
+
+body.info-page .hire {
+    font-size: 18px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+body.info-page .hire:hover {
+    background: #000;
+}
