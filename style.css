@@ -411,3 +411,36 @@ body.info-page .hire:hover {
     width: 1000px; /* Adjust size as needed */
     height: auto;
 }
+/* Styles for the intro page */
+.intro-page {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+#banner_canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Make sure the canvas is behind other elements */
+}
+.intro-page header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* You can keep align-items centered if needed */
+    z-index: 100;
+}
