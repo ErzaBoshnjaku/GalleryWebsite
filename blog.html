@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <!-- header -->
     <header>
         <div class="logo"><img src="hiraeth.png" alt=""></div>
@@ -28,27 +29,5 @@
         <p>&copy; 2024 Hiraeth</p>
     </footer>
 
-    <script>
-        const prevButton = document.getElementById('prev');
-        const nextButton = document.getElementById('next');
-        const sliderItems = document.querySelectorAll('.slider-item');
-        let currentIndex = 0;
-
-        function showSlide(index) {
-            sliderItems.forEach((item, i) => {
-                item.classList.toggle('active', i === index);
-            });
-        }
-
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : sliderItems.length - 1;
-            showSlide(currentIndex);
-        });
-
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex < sliderItems.length - 1) ? currentIndex + 1 : 0;
-            showSlide(currentIndex);
-        });
-    </script>
 </body>
 </html>
