@@ -235,57 +235,7 @@ header .menu a:hover {
         padding: 20px;
         box-sizing: border-box;
     }
-    
-    .video-slider {
-        position: relative;
-        width: 80%;
-        max-width: 800px;
-    }
-    
-    .slider-wrapper {
-        display: flex;
-        overflow: hidden;
-    }
-    
-    .slider-item {
-        min-width: 100%;
-        transition: transform 0.5s ease-in-out;
-        opacity: 0;
-        visibility: hidden;
-    }
-    
-    .slider-item.active {
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .video-slider video {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-    
-    .slider-nav {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
-    }
-    
-    .slider-nav button {
-        background-color: rgba(0, 0, 0, 0.5);
-        border: none;
-        color: #fff;
-        padding: 10px;
-        cursor: pointer;
-    }
-    
-    .slider-nav button:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    
+     
 
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 * {
