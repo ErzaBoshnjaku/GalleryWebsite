@@ -411,7 +411,8 @@ body.info-page .hire:hover {
     width: 1000px; /* Adjust size as needed */
     height: auto;
 }
-/* Styles for the intro page */
+
+
 .intro-page {
     background-color: black;
     overflow: hidden;
@@ -420,7 +421,6 @@ body.info-page .hire:hover {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
     position: relative;
 }
 
@@ -432,15 +432,45 @@ body.info-page .hire:hover {
     height: 100%;
     z-index: -1; /* Make sure the canvas is behind other elements */
 }
-.intro-page header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: 1200px;
+
+header {
+    width: 1200px;
+    max-width: 90%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* You can keep align-items centered if needed */
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     z-index: 100;
+}
+
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.menu a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
 }
