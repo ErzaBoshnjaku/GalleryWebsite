@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.8.6/pixi.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="intro.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.10/pixi.min.js"></script>
 </head>
-<body class="intro-page">
-    <canvas id="banner_canvas" width="100" height="100"></canvas>
-    <header>
-        <div class="logo"><img src="hiraeth.png" alt=""></div>
+
+<body class="info-page">
+    
+    <!-- header -->
+    <header class="header-logo">
+        <div class="logo">
+            <canvas id="logo-canvas" class="pixi-logo-canvas"></canvas>
+        </div>
+        
         <ul class="menu">
             <li><a href="intro.html">Intro</a></li>
             <li><a href="index.html">Home</a></li>
@@ -20,8 +24,14 @@
             <li><a href="info.html">Info</a></li>
             <li><a href="end.html">^_^</a></li>
         </ul>
-        
-        </div>
     </header>
+
+    <!-- content -->
+    <div class="content">
+        <!-- Contact form or other content goes here -->
+    </div>
+
+    <script src="test.js"></script>
 </body>
+
 </html>
