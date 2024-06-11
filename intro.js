@@ -32,6 +32,11 @@ $(document).ready(() => {
             p.vy = 0;
             p.alpha = 20 / (size * size);
             p.tint = randomColor();
+            function randomColor() {
+                const colors = [0x6B8A7A, 0xEEF7FF, 0x535C91, 0x7D0A0A]; // #6B8A7A, #EEF7FF, #535C91, #7D0A0A
+                return colors[Math.floor(Math.random() * colors.length)];
+            }
+            
             drops.addChild(p);
             return p;
         });
