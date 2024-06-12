@@ -26,8 +26,8 @@
             // Move the sprite to the center of the screen
             bunny.x = app.screen.width / 2;
             bunny.y = app.screen.height / 2;
-            bunny.width = 200;
-            bunny.height = 200;
+            bunny.width = 150;
+            bunny.height = 150;
 
             app.stage.addChild(bunny);
 

@@ -424,23 +424,77 @@ body.info-page .hire:hover {
     position: relative;
 }
 
+.intro-page header {
+    position: absolute;
+    top: 2%; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    width: 100px; /* Adjust the width as needed */
+}
+
+.logo img {
+    max-width: 100%;
+}
+
 #banner_canvas {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Make sure the canvas is behind other elements */
+    z-index: -1;
 }
-.intro-page header {
+body.end-page {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #010101;
+    color: #eee;
+}
+
+.end-header {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 20;
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    padding: 20px; /* Add padding for spacing */
     display: flex;
-    justify-content: space-between;
-    align-items: center; /* You can keep align-items centered if needed */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
     z-index: 100;
+}
+
+
+.end-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px; /* Add gap between menu items */
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+.end-menu li {
+    margin: 0;
+}
+
+.end-menu a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.end-menu a:hover {
+    text-decoration: underline;
+}
+
+.end-content {
+    padding-top: 100px; /* Add padding to avoid overlap with header */
 }
